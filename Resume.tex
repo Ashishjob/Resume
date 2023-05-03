@@ -1,0 +1,233 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{fontawesome}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Ashish Job} \\ \vspace{1pt}
+    \small {832-310-5582} $|$ \href{mailto:ashishjob104@gmail.com}{{ashishjob104@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/ashish-job/}{{linkedin.com/in/ashish-job}} 
+    $|$ \href{https://github.com/Ashishjob}{{github.com/Ashishjob}}
+    $|$ \href{https://ashishjob.web.app/}{{ashishjob.web.app}}
+    
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Houston - Honor's College}{Aug. 2022 -- May 2025}
+      {Bachelor of Science in Computer Science, Minor in Mathematics}{GPA: 4.00}
+    \resumeSubheading{Relevant Coursework:}{}{}{}{Introduction to Programming,}{ Computer Science and Programming}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Cybersecurity Intern}{March 2023 -- April 2023}
+      {Chrysallis.AI}{Remote}
+      \resumeItemListStart
+        \resumeItem{Evaluated gap analyses of the institution's set policies concerning threat feed monitoring and updating.}
+        \resumeItem{Formulated RACI charts as a team lead to communicate responsibilities with my team members.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Tutor}{April 2021 -- August 2021}
+      {The Tutoring Center}{Sugar Land, TX}
+      \resumeItemListStart
+        \resumeItem{Instructed 12 students per day in Math and Sciences, with student ages ranging from pre-school to 12th grade.}
+        \resumeItem{Utilized Microsoft Excel to communicate with management and coworkers about scheduled times and clients.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Pokemon Tamagotchi/RPG $|$ Object-Oriented Programming } $|$ \emph{C++, GitHub, Figma, UML}}{}
+          \resumeItemListStart
+            \resumeItem{Designed a fullstack web application for user interaction to measure differences between Texas and 220 countries.}
+            \resumeItem{ Constructed a Microsoft Excel data file, containing data about the size of 220 country’s landmasses by the bot.}
+          \resumeItemListEnd
+
+          \resumeProjectHeading
+          {\textbf{Portfolio Website $|$ Web Development} $|$ \emph{JavaScript, HTML/CSS}}{}
+          \resumeItemListStart
+            \resumeItem{Designed a website to showcase personal computer science experiences and projects in various formats and styles.}
+            \resumeItem{Hosted the website to allow for public viewing and user experience by utilizing Google's Firebase platform.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Big "Tex" Bot $|$ Algorithm } $|$ \emph{Python, Flask, Microsoft Excel}}{}
+          \resumeItemListStart
+            \resumeItem{Designed a fullstack web application for user interaction to measure differences between Texas and 220 countries.}
+            \resumeItem{ Constructed a Microsoft Excel data file, containing data about the size of 220 country’s landmasses by the bot.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Malayalam MNIST $|$ Neural Network Artificial Intelligence} $|$ \emph{Python}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a digital classification system through which all 56 written Malayalam characters can be identified.}
+            \resumeItem{Employed a dataset containing written formats of all 56 characters in Malayalam for Python to classify each letter.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{CougarCS $|$ \emph{Typescript, React.js, Next.js, TailwindCSS}}{March 2023 -- Present}{Web Dev Committee}{}
+            \resumeItemListStart
+                \resumeItem{Involved in the Events and Logistics Team, orchestrating events for the 413-member student organization.}
+                \resumeItem{Communicated with executive officers to make decisions to move forwards with plans for the organization.}
+            \resumeItemListEnd
+            \resumeSubheading{CougarAI}{Fall 2022 -- Present}{DataCON Logistics Director}{}
+            \resumeItemListStart
+                \resumeItem{Instructed the batches of students enrolled in introductory computer science courses and receiving great results.}
+                \resumeItem{Increased the effectiveness of the organization's tutoring service by encouraging involvement in the organization}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C++, JavaScript, HTML/CSS} \\
+     \textbf{Technologies/Frameworks}{: React, Node.js, Flask, Github}
+    }}
+ \end{itemize}
+
+ \section{Honors / Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{}{Dean’s List - Fall 2022 $|$ Dean’s Distinguished Scholar’s List - Fall 2022 $|$ Dean’s Freshman Excellence Award $|$ \\Dean’s List for  the Honor’s College - Fall 2022 $|$ Commended National Merit Scholar $|$ AP Scholar with Distinction $|$ Academic Excellence Scholarship Recipient $|$ Jerrin Alexander Memorial ACT Award}{} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
